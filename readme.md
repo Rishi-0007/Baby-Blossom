@@ -20,7 +20,7 @@ To install the Baby Blossom Web App, follow the instructions below based on your
 1. Open Chrome on your Android device.
 2. Navigate to the Baby Blossom website (e.g., https://babyblossom.netlify.app/).
 3. Tap the menu button (three dots) in the top-right corner.
-4. Select "Add to Home screen" from the menu.
+4. Select "Install" from the menu.
 5. Customize the app name if desired, then tap "Add" in the pop-up window.
 6. The Baby Blossom Web App will now be installed on your Android device and accessible from your home screen.
 
