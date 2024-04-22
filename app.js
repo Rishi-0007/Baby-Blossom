@@ -22,3 +22,8 @@ function showContent(contentId) {
 
     document.getElementById(contentId).style.display = 'block';
 }
+
+// Show only content with id 'home' on first time opening app
+window.addEventListener('DOMContentLoaded', () => {
+    showContent('home');
+});
