@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <!-- viewport-fit=cover is used to make the app full screen(works only on devices with notch) -->
+    <title>Pregnancy App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="https://kit.fontawesome.com/1ef072f2a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <i class="fa-solid fa-house" onclick="showContent('home')"></i>
+        <i class="fa-solid fa-user-doctor" onclick="showContent('doctor')"></i>
+        <i class="fa-solid fa-shop" onclick="showContent('store')"></i>
+        <i class="fa-solid fa-user" onclick="showContent('profile')"></i>
+    </nav>
+
+    <!-- Home -->
+    <main id="home" class="content">
+        <div class="navbar">
+            <h3>Home</h3>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="circle-card">
+            <!-- circle animation -->
+            <div class="circle-container">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <img src="assets/fetus.png" alt="baby">
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
+            <!-- circle animation end -->
+            <div class="circle-content">
+                <h3>8 Weeks</h3>
+                <p>left to become Mom!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>DAILY TIP</h3>
+                <p>Get tips on how to stay healthy during pregnancy</p>
+            </div>
+
+            <!-- curve -->
+            <div class="custom-shape-divider-top-1713732584">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div class="card-text">
+                <h4>Baby says - Daddy chill!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, mollitia iusto?</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <h3>TODAY'S DIGEST</h3>
+                <p>Your daily dose of content during pregnancy</p>
+            </div>
+
+            <!-- curve -->
+            <div class="custom-shape-divider-top-1713734353">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div class="card-body">
+                <div class="card-item">
+                    <iframe src="https://www.youtube.com/embed/3GTK6MLPJ9g?si=-pbvFliA0EvrFY2u&amp;start=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div>
+                        <h4>FOOD</h4>
+                        <p>What to eat and what to avoid during pregnancy</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <iframe src="https://www.youtube.com/embed/ZZIl3ZwcyRg?si=2GdaSKI-fuftOg4B&amp;start=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div>
+                        <h4>EXERCISE</h4>
+                        <p>Stay fit and healthy during pregnancy</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <iframe src="https://www.youtube.com/embed/Km0CsOjF_Fw?si=eaQVrx6pqRoh4SPH&amp;start=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div>
+                        <h4>MEDITATION</h4>
+                        <p>Relax and meditate for a healthy pregnancy</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Doctor -->
+    <main id="doctor" class="content">
+        <div class="navbar">
+            <div>
+                <p>Good Eve.</p>
+                <h3>Sofia</h3>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="doctor-body">
+            <h3>Nearby Doctors</h3>
+            <div id="map">
+                <iframe src="https://my.atlist.com/map/d3822206-724f-4124-b24d-a5560f6bd52e/?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
+          </div>
+            <h3>Available Doctors</h3>
+            <div class="doctors">
+                <div class="doctor">
+                    <img src="assets/doctor1.jpg" alt="doctor">
+                    <div>
+                        <span>Dr. John Doe</span><i class="fa-solid fa-circle"></i>
+                        <p>Nutritionist</p>
+                    </div>
+                </div>
+                <div class="doctor">
+                    <img src="assets/doctor2.jpg" alt="doctor">
+                    <div>
+                        <span>Dr. Jane Doe</span><i class="fa-solid fa-circle"></i>
+                        <p>Neurologist</p>
+                    </div>
+                </div>
+                <div class="doctor">
+                    <img src="assets/doctor3.jpg" alt="doctor">
+                    <div>
+                        <span>Dr. James Doe</span><i class="fa-solid fa-circle"></i>
+                        <p>Orthopedic</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <!-- Marketplace -->
+    <main id="store" class="content">
+        <div class="navbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search store...">
+            <div class="icons">
+                <i class="fa-solid fa-cart-shopping"></i></i>&nbsp;&nbsp;
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="store-content">
+            <h2>Bestsellers</h2>
+            <div class="store-item">
+                <img src="assets/cream.avif" alt="cream">
+                <div>
+                    <h3>Stretch Mark Cream</h3>
+                    <p>Prevent stretch marks during pregnancy</p>
+                    <span>₹200</span>
+                </div>
+                <div>
+                    <button>Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="store-item">
+                <img src="assets/dress.avif" alt="dress">
+                <div>
+                    <h3>Maternity Dress</h3>
+                    <p>Comfortable dress for pregnant women</p>
+                    <span>₹800</span>
+                </div>  
+                <div>
+                    <button>Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="store-item">
+                <img src="assets/oil.jpg" alt="oil">
+                <div>
+                    <h3>Massage Oil</h3>
+                    <p>Relax and massage your body</p>
+                    <span>₹399</span>
+                </div>
+                <div>
+                    <button>Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div class="store-item">
+                <img src="assets/pillow.jpg" alt="pillow">
+                <div>
+                    <h3>Pregnancy Pillow</h3>
+                    <p>Get a good night sleep during pregnancy</p>
+                    <span>₹999</span>
+                </div>
+                <div>
+                    <button>Add to Cart</button>
+                    <button class="buy-btn">Buy Now</button>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <p style="text-align: center;">Show more</p>
+        <div>  
+    </main>
+
+    <!-- Profile -->
+    <main id="profile" class="content">
+        <div class="navbar">
+            <h3>Profile</h3>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="assets/profile.jpg" alt="profile">
+                <div>
+                    <h3>Hello Sofia</h3>
+                    <p>How are you feeling today?</p>
+                </div>
+            </div>
+            <div class="profile-content">
+                <ul>
+                    <li><i class="fa-regular fa-user"></i>&nbsp;&nbsp;
+                        <div>
+                            <h3>My Account</h3>
+                            <p>Make changes to your account</p>
+                        </div>
+                    </li>
+                    <li><i class="fa-regular fa-bell"></i>&nbsp;&nbsp;
+                        <div>
+                            <h3>Notifications</h3>
+                            <p>Manage your notifications</p>
+                        </div>
+                    </li>
+                    <li><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;
+                        <div>
+                            <h3>Privacy</h3>
+                            <p>Manage your account privacy</p>
+                        </div>
+                    </li>
+                    <li><i class="fa-solid fa-shield-halved"></i>&nbsp;&nbsp;
+                        <div>
+                            <h3>Security</h3>
+                            <p>Further secure your account for safety</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-right-from-bracket"
+                            style="color: red; background-color: #fad3d3;"></i>&nbsp;&nbsp;
+                        <h3 style="color: red;">Log Out</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="text-align: center;">About App | Terms of uses</p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
